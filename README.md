@@ -14,6 +14,7 @@ We want to incorporate a few fun features with the existing 2048 game that will 
 
 ## How?
 These features seem great, but how exactly are we going to do this?
+
 1. Create API endpoints in the Rails app for:
   - Saving the data from the game
   - Loading and sending the saved data to the game
