@@ -21,6 +21,7 @@ These features seem great, but how exactly are we going to do this?
 1. Update the "Storage Manager" feature in the game to integrate AJAX to:
   - Send game data to the rails API upon save
   - Load game data from the rails API when the users requests it
+  - For some information about the current storage implementation, look [here](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
 
 ## Added fun!
 - Figure out how to update the leaderboard more often than  when a save occurs
