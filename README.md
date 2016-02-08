@@ -8,9 +8,10 @@ You have dealt with an understood some of the major challenges with creating a 2
 
 ## Features
 We want to incorporate a few fun features with the existing 2048 game that will make it more interactive. This will be done with a rails application which will contain some of the original 2048 source code.
+
 1. Allow users to log in to the system
 1. Allow users to view, resume, delete and save their games
-1. Allow users to view the a leaderboard which will show them the highest scores of other users registered in the system
+1. Allow users to view a leaderboard which will show them the highest scores of other users registered in the system
 
 ## How?
 These features seem great, but how exactly are we going to do this?
