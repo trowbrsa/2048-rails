@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "site#index"
+  root to: "users#show"
   get "/auth/:provider/callback", to: "sessions#create"
 
 end
