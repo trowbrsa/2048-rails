@@ -270,3 +270,19 @@ GameManager.prototype.tileMatchesAvailable = function () {
 GameManager.prototype.positionsEqual = function (first, second) {
   return first.x === second.x && first.y === second.y;
 };
+
+GameManager.prototype.currentState = function () {
+    var currentState = this.LocalStorage.getGameState();
+
+    console.log(currentState);
+
+    // var url = "/savegame";
+    //
+    // $.ajax(url, {
+    //       type: "POST"
+    //       // state: currentState;
+    //     });
+    //
+        // .done(function(data) {
+
+};

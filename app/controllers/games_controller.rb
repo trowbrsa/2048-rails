@@ -7,6 +7,7 @@ skip_before_action :verify_authenticity_token
 
   def save
     # save game to DB
+    # return JSON
   end
 
 end
