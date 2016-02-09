@@ -1,7 +1,6 @@
 <ul>
   <% if @current_user %>
     <li class="logout"><%= link_to "Logout", logout_path, method: :delete %></li>
-    <li>LeaderBoard </li>
   <% else %>
     <li><a href="/auth/github/">Sign in with Github!</a></li>
     <% end %>
