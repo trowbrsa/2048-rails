@@ -13,6 +13,10 @@ class SessionsController < ApplicationController
     else
       redirect_to root_path, notice: "Failed to authenticate"
     end
+  end
 
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_path, notice: "You've logged out. See you next time."
   end
 end
