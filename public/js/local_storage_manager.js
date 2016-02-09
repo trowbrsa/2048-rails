@@ -39,6 +39,25 @@ LocalStorageManager.prototype.localStorageSupported = function () {
   }
 };
 
+LocalStorageManager.prototype.currentState = function () {
+  var currentState = this.LocalStorage.getGameState();
+
+  var url = "/savegame";
+
+
+  $.ajax(url, {
+        type: "POST"
+        // state: currentState;
+      });
+
+
+      // .done(function(data) {
+
+  };
+
+
+}
+
 // Best score getters/setters
 LocalStorageManager.prototype.getBestScore = function () {
   return this.storage.getItem(this.bestScoreKey) || 0;
