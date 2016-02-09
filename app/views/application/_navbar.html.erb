@@ -1,12 +1,8 @@
-<div class="row">
-  <nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <% if @current_user %>
-        <li class="logout"><%= link_to "Logout", logout_path, method: :delete %></li>
-        <li>LeaderBoard </li>
-      <% else %>
-        <li><a href="/auth/github/">Sign in with Github!</a></li>
+<ul>
+  <% if @current_user %>
+    <li class="logout"><%= link_to "Logout", logout_path, method: :delete %></li>
+    <li>LeaderBoard </li>
+  <% else %>
+    <li><a href="/auth/github/">Sign in with Github!</a></li>
     <% end %>
-    </ul>
-  </nav>
-</div>
+</ul>
