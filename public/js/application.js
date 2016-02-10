@@ -12,11 +12,11 @@ window.requestAnimationFrame(function () {
   })
     .done(function() {
       console.log("success");
-      console.log(gameData)
+      console.log(gameInfo)
     })
     .fail(function() {
       console.log("failure");
-      console.log(gameData);
+      console.log(gameInfo);
     });
   });
 
