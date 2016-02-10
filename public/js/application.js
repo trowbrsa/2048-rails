@@ -4,18 +4,19 @@ window.requestAnimationFrame(function () {
 
   $('.save').click(function() {
   var saveGameUrl = "http://localhost:3000/savegame";
-  var gameData = current_game.storageManager.storage.gameState;
+  var gameInfo = current_game.storageManager.storage.gameState;
   $.ajax({
     method: "POST",
     url: saveGameUrl,
-    data: JSON.parse(gameData)
+    data: JSON.parse(gameInfo)
   })
     .done(function() {
       console.log("success");
+      console.log(gameData)
     })
     .fail(function() {
       console.log("failure");
-      console.log(gameData)
+      console.log(gameData);
     });
   });
 
