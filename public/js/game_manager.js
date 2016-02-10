@@ -9,9 +9,17 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));
+  // this.inputManager.on("get_score", this.save.bind(this));
 
   this.setup();
 }
+
+//
+// GameManager.prototype.get_score = function() {
+//   var game = this.GameManager
+//     console.log(game);
+//   $.get ()
+// }
 
 // Restart the game
 GameManager.prototype.restart = function () {
