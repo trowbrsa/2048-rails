@@ -8,7 +8,8 @@ skip_before_action :verify_authenticity_token
   def save
     game = Game.new
     game.data = params["grid"]
-
+    game.current_score = params["score"]
+    game.user_id = @current_user.id
     if game.save
       render nothing: true, :status => :ok
     else

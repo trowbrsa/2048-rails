@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :games
-  validates :email, :username, :uid, :provider, presence: true
+  validates :username, :uid, :provider, presence: true
 
   def self.find_or_create_from_omniauth(auth_hash)
     user = self.find_by(uid: auth_hash["uid"], provider: auth_hash["provider"])
