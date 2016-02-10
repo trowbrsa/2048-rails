@@ -4,7 +4,7 @@ window.requestAnimationFrame(function () {
   var saveGameUrl = "http://localhost:3000/savegame";
   var gameId = window.location.search.slice(5);
 
-  $('.saveGame').click(function() {
+  $('#saveGame').click(function() {
     var gameInfo = currentGame.storageManager.storage.gameState;
     $.ajax({
       method: "POST",
