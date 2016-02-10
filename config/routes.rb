@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   delete "/logout" => "sessions#destroy", as: :logout
   get "/savedgames" => "users#savedgames", as: :savedgames
   post "/savegame" => "games#save"
+  get '/games/:id' => 'games#resume_game', as: :resume_game
+  get "/leaderboard" => "users#leaderboard", as: :leaderboard
 
 end

@@ -5,6 +5,9 @@ class UsersController < ApplicationController
     @display_current_games = current_games
   end
 
+  def leaderbaord
+    
+  end
 
 
 end
