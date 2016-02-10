@@ -1,11 +1,7 @@
-<div class="row">
-  <div class="navbar navbar-default">
-    <div class="navbar-left navbar-links">
-      <% if @current_user %>
-        <%= link_to "Logout", logout_path, method: :delete %>
-      <% else %>
-        <a href="/auth/github/">Sign in with Github!</a>
-      <% end %>
-    </div>
-  </div>
-</div>
+<ul>
+  <% if @current_user %>
+    <li class="logout"><%= link_to "Logout", logout_path, method: :delete %></li>
+  <% else %>
+    <li><a href="/auth/github/">Sign in with Github!</a></li>
+    <% end %>
+</ul>
