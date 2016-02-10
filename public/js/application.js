@@ -20,17 +20,17 @@ window.requestAnimationFrame(function () {
     });
   });
 });
-
-  url = "http://localhost:3000/games/1"
-  $.ajax(url, {
-      method: "GET"
-    })
-    .done(function(data) {
-
-      }
-
-    }) // syntax: don't add semicolon until end of every dot statement
-    .fail(function(){
-      console.log("FAIL");
-    });
-  });
+  // 
+  // url = "http://localhost:3000/games/1"
+  // $.ajax(url, {
+  //     method: "GET"
+  //   })
+  //   .done(function(data) {
+  //
+  //
+  //
+  //   }) // syntax: don't add semicolon until end of every dot statement
+  //   .fail(function(){
+  //     console.log("FAIL");
+  //   });
+  // });

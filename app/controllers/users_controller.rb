@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def show
-    @games = @curernt_user.games
+    @games = @current_user.games
   end
 
 end
