@@ -2,6 +2,7 @@
 window.requestAnimationFrame(function () {
   var currentGame = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   var saveGameUrl = "http://localhost:3000/savegame";
+  var gameId = window.location.search.slice(5);
 
   $('.save').click(function() {
     var gameInfo = currentGame.storageManager.storage.gameState;
@@ -20,7 +21,15 @@ window.requestAnimationFrame(function () {
     });
   });
 });
-  // 
+
+if (gameId.length > 0) {
+  var getUrl = "http://localhost:3000/games/" + gameId;
+  $.ajax(getUrl)
+    .done(function(data) {
+//      currentGame. Something -> (data);
+  });
+}
+  //
   // url = "http://localhost:3000/games/1"
   // $.ajax(url, {
   //     method: "GET"
