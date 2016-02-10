@@ -6,8 +6,7 @@ class UsersController < ApplicationController
   end
 
   def leaderbaord
-    
-  end
 
+  end
 
 end

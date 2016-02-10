@@ -2,7 +2,7 @@
   <ul>
     <!-- inheriting current li classes -->
     <% if @current_user %>
-      <li class="saveGame">Save game</li>
+      <li class="navbr" id="saveGame">Save game</li>
       <li class="navbar"><%= link_to "View Saved Games", savedgames_path %></li>
       <li class="navbar"><%= link_to "Leaderboard", leaderboard_path %></li>
       <li class="navbar"><%= link_to "Logout", logout_path, method: :delete %></li>
