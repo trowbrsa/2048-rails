@@ -3,7 +3,7 @@ window.requestAnimationFrame(function () {
   var currentGame = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   var saveGameUrl = "http://localhost:3000/savegame";
 
-  $('.save').click(function() {
+  $('.saveGame').click(function() {
     var gameInfo = currentGame.storageManager.storage.gameState;
     $.ajax({
       method: "POST",

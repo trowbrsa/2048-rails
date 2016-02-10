@@ -1,7 +1,14 @@
-<ul>
-  <% if @current_user %>
-    <li class="logout"><%= link_to "Logout", logout_path, method: :delete %></li>
-  <% else %>
-    <li><a href="/auth/github/">Sign in with Github!</a></li>
+<div class="navbar">
+  <ul>
+    <!-- inheriting current li classes -->
+    <% if @current_user %>
+      <li class="saveGame">Save game | </li>
+      <li>| View saved games | </li>
+      <li>| Leaderboard</li>
+
+      <li><%= link_to "Logout", logout_path, method: :delete %></li>
+    <% else %>
+      <li><a href="/auth/github/">Sign in with Github!</a></li>
     <% end %>
-</ul>
+  </ul>
+</div>
