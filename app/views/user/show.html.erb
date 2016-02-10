@@ -1,0 +1,6 @@
+<h1> List of Games </h1>
+
+<% @games.each do |game| %>
+  <ul> Score: <%= game.current_score %>  </ul>
+  <button class = "resume" data-val=<%= game.id %>>Resume Game</button>
+  <% end %>
