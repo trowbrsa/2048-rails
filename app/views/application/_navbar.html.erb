@@ -2,12 +2,12 @@
   <ul>
     <!-- inheriting current li classes -->
     <% if @current_user %>
-      <li class="navbr" id="saveGame">Save game</li>
       <li class="navbar"><%= link_to "View Saved Games", savedgames_path %></li>
       <li class="navbar"><%= link_to "Leaderboard", leaderboard_path %></li>
       <li class="navbar"><%= link_to "Logout", logout_path, method: :delete %></li>
     <% else %>
       <li class="navbar"><a href="/auth/github/">Sign in with Github!</a></li>
     <% end %>
+      <li class="navbar" id="saveGame">Save game</li>
   </ul>
 </div>

@@ -13,3 +13,47 @@
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.navbar {
+  font-size: 14px;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+//
+// li {
+//     float: left;
+// }
+//
+// li a {
+//     display: block;
+//     color: black;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+// }
+
+li {
+    float: left;
+    display: block;
+    // padding: 2px;
+    background-color: #dddddd;
+    font-size: 10px;
+}
+
+a {
+    display: block;
+    // padding: 2px;
+    background-color: #dddddd;
+}

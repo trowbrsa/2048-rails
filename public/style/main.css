@@ -11,31 +11,6 @@ body {
   margin: 80px 0; }
 
 
-.navbar {
-  font-size: 20px;
-  color: black;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-weight: bold;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
 .heading:after {
   content: "";
   display: block;
