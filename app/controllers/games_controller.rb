@@ -6,8 +6,14 @@ skip_before_action :verify_authenticity_token
   end
 
   def save
-    # save game to DB
-    # return JSON
-  end
+    game = Game.new
+    game.data = params["grid"]
 
+    if game.save
+      render nothing: true, :status => :ok
+    else
+      # alert
+      render nothing: true, :status => :no_content
+    end
+  end
 end
