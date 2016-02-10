@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
 skip_before_action :verify_authenticity_token
 
-  def show
+  def view_current_game
 
   end
 
