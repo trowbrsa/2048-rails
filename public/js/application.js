@@ -26,7 +26,7 @@ if (gameId.length > 0) {
   var getUrl = "http://localhost:3000/games/" + gameId;
   $.ajax(getUrl)
     .done(function(data) {
-//      currentGame. Something -> (data);
+      currentGame.reload(data);
   });
 }
   //

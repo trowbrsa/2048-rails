@@ -39,6 +39,13 @@ GameManager.prototype.isGameTerminated = function () {
   return this.over || (this.won && !this.keepPlaying);
 };
 
+GameManager.prototype.reload = function(data) {
+  this.grid        = new Grid(data[grid]); // Reload grid
+  this.score       = data[score];
+  this.over        = data[over];
+  this.won         = data[won];
+  this.keepPlaying = data[keepPlaying];
+}
 // Set up the game
 GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
@@ -283,14 +290,5 @@ GameManager.prototype.currentState = function () {
     var currentState = this.LocalStorage.getGameState();
 
     console.log(currentState);
-
-    // var url = "/savegame";
-    //
-    // $.ajax(url, {
-    //       type: "POST"
-    //       // state: currentState;
-    //     });
-    //
-        // .done(function(data) {
 
 };
