@@ -45,11 +45,11 @@ GameManager.prototype.reload = function(data) {
   this.over        = data[over];
   this.won         = data[won];
   this.keepPlaying = data[keepPlaying];
-}
+};
 // Set up the game
 GameManager.prototype.setup = function () {
   var previousState = this.storageManager.getGameState();
-
+ console.log(previousState);
   // Reload the game from a previous game if present
   if (previousState) {
     this.grid        = new Grid(previousState.grid.size,

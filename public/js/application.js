@@ -22,13 +22,13 @@ window.requestAnimationFrame(function () {
   });
 });
 
-if (gameId.length > 0) {
-  var getUrl = "http://localhost:3000/games/" + gameId;
-  $.ajax(getUrl)
-    .done(function(data) {
-      currentGame.reload(data);
-  });
-}
+// if (gameId.length > 0) {
+//   var url = "http://localhost:3000/games/" + gameId;
+//   $.ajax(url)
+//     .done(function(data) {
+//       currentGame.reload(data);
+//   });
+// }
   //
   // url = "http://localhost:3000/games/1"
   // $.ajax(url, {

@@ -14,7 +14,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+.yellow {
+  background-color: yellow;
+}
 .navbar {
   font-size: 14px;
   color: black;
