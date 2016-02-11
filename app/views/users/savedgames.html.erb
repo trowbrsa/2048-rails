@@ -11,7 +11,7 @@
     <tr>
       <td><%= count+= 1 %></td>
       <td><%= game.current_score %></td>
-      <td><button class="resume" value=<game.id>Resume Game</game.id></td>
+      <td><%= button_to "resume", resume_game_path(game.id), method: :get %></td>
     <% end %>
     </tr>
   </tbody>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209001049) do
+ActiveRecord::Schema.define(version: 20160211003144) do
 
   create_table "games", force: :cascade do |t|
     t.string   "data"
@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 20160209001049) do
     t.integer  "current_score"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.boolean  "over"
+    t.boolean  "won"
+    t.boolean  "keepPlaying"
   end
 
   create_table "users", force: :cascade do |t|
