@@ -50,28 +50,12 @@ LocalStorageManager.prototype.setBestScore = function (score) {
 };
 
 // Game state getters/setters and clearing
-// LocalStorageManager.prototype.getGameState = function () {
-//   var stateJSON = this.storage.getItem(this.gameStateKey);
-//   console.log(stateJSON);
-//   return stateJSON ? JSON.parse(stateJSON) : null;
-// };
-
 LocalStorageManager.prototype.getGameState = function () {
-
+  var stateJSON = this.storage.getItem(this.gameStateKey);
   console.log(stateJSON);
-  var stateJSON = {"grid":{"size":4,"cells":[[null,null,null,null],
-  [{"position":{"x":1,"y":0},"value":2},null,
-  {"position":{"x":1,"y":2},"value":32},
-  {"position":{"x":1,"y":3},"value":4}],[{"position":{"x":2,"y":0},"value":2},
-  {"position":{"x":2,"y":1},"value":16},{"position":{"x":2,"y":2},
-  "value":4},{"position":{"x":2,"y":3},"value":4}],
-  [{"position":{"x":3,"y":0},"value":64},
-  {"position":{"x":3,"y":1},"value":32},
-  {"position":{"x":3,"y":2},"value":8},{"position":{"x":3,"y":3},"value":4}]]},
-  "score":2,"over":false,"won":false,"keepPlaying":false};
-  console.log(stateJSON);
-  return stateJSON;// ? JSON.parse(stateJSON) : null;
+  return stateJSON ? JSON.parse(stateJSON) : null;
 };
+
 
 LocalStorageManager.prototype.setGameState = function (gameState) {
   this.storage.setItem(this.gameStateKey, JSON.stringify(gameState));

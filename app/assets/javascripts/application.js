@@ -20,12 +20,13 @@
 $(document).on('ready', function() {
   $('.resume').click(function() {
     var id = $(this).attr("data-val");
-    $(this).addClass("yellow");
     var url = "http://localhost:3000/games/" + id;
-    window.location.href = 'http://localhost:3000/?gid=' + gameId;
-    $.ajax(url)
+    window.location.href = 'http://localhost:3000/?game=' + id;
+    $.ajax(url, {
+    })
       .done(function(data) {
         console.log(data);
+        $(this).addClass("red");
     });
 
   });

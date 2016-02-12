@@ -45,6 +45,8 @@ GameManager.prototype.reload = function(data) {
   this.over        = data[over];
   this.won         = data[won];
   this.keepPlaying = data[keepPlaying];
+  this.addStartTiles();
+  this.actuate();
 };
 // Set up the game
 GameManager.prototype.setup = function () {
